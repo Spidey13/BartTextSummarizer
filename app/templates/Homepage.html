@@ -1,0 +1,76 @@
+﻿{% extends 'base_home.html' %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/Homepage.css') }}">
+
+    <script src = "{{ url_for('static', filename = 'js/Homepage.js') }}"></script>
+{% endblock %}
+{% block content %}
+    <header id="header">
+
+        <div class="title" style="margin-top: 10%;">
+            <div><span class="typcn typcn-heart-outline icon heading"></span></div>
+            <div class="smallsep heading"></div>
+            <h1 class="heading">Meditrack</h1>
+            <h2 class="heading">For you forgetful dum dums</h2>
+            <a class="smoothscroll" href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </div>
+        <a class="smoothscroll" href="#about">
+            <div class="scroll-down"></div>
+        </a>
+    </header>
+
+    <!-- About Section
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <h1>About</h1>
+                <div class="block"></div>
+                <p>MediTrack is a medicine pill remainder app for people of all age groups. It is simple and efficient way of following and sticking to your medicines shedule. Let us take you through our process and help you lead a healthy and happier life!</p>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <h3><span class="typcn typcn-device-desktop icon"></span>Our Process</h3>
+                    <p>"Meditrack" is has been developed to assist patients to keep track of all of their pill and remind them when it’s time to take a dosage. With this useful and simple medication reminder you will never miss your pill again.</p>
+                </div>
+                <div class="six columns">
+                    <h3><span class="typcn
+                              typcn-pen icon"></span>Our Approach</h3>
+                    <p>The webapp helps you create habits that keep you healthy and lets you always have the right medication at the right dosage at the right time. Every day, simply receive the notification at the scheduled time and take your pill with this website.</p>
+                </div>
+                <div class="row">
+
+                    <div class="six columns">
+                        <h3><span class="typcn typcn-cog-outline icon"></span>Our Goal</h3>
+                        <p>Staying healthy and getting your medications exactly when your body needs them is vital, but sometimes you just forget. Oue goal is to help everyone with their medicine needs and thus lead a healthy and safe life.</p>
+                    </div>
+                    <div class="six columns">
+                        <h3><span class="typcn typcn-lightbulb icon"></span>Our Mission</h3>
+                        <p>We aim to mak
+                        e this application reach as many poeple as possible accros the globe and introduce them to a easier, healthier and safer way of life</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <footer>
+        <div class="container">
+            <div class="nine columns">
+                <p>Created with love for you to live a healthy and carefree life</p>
+            </div>
+            <div class="three columns"> <span class="typcn typcn-social-facebook-circular socialIcons"></span> <span class="typcn typcn-social-instagram-circular socialIcons"></span> <span class="typcn typcn-social-google-plus-circular socialIcons"></span> <span class="typcn typcn-social-linkedin-circular socialIcons"></span> </div>
+        </div>
+    </footer>
+
+
+
+{% endblock %}
